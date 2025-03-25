@@ -1,0 +1,11 @@
+{
+	"RemapUnityFiles": 
+	{
+		"Module.PathfindingPlugin.cpp.obj": [
+			"PathfindingPlugin.init.gen.cpp.obj",
+			"SplineManager.gen.cpp.obj",
+			"PathfindingPlugin.cpp.obj",
+			"SplineManager.cpp.obj"
+		]
+	}
+}

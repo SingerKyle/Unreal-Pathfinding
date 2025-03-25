@@ -1,0 +1,14 @@
+{
+    "Version": "1.2",
+    "Data": {
+        "Source": "d:\\university\\portfolio\\pathfindingtest\\plugins\\pathfindingplugin\\source\\pathfindingplugin\\private\\pathfindingplugin.cpp",
+        "ProvidedModule": "",
+        "PCH": "d:\\university\\portfolio\\pathfindingtest\\intermediate\\build\\win64\\x64\\pathfindingtesteditor\\development\\unrealed\\sharedpch.unrealed.project.valapi.cpp20.h.pch",
+        "Includes": [
+            "d:\\university\\portfolio\\pathfindingtest\\plugins\\pathfindingplugin\\intermediate\\build\\win64\\x64\\unrealeditor\\development\\pathfindingplugin\\definitions.pathfindingplugin.h",
+            "d:\\university\\portfolio\\pathfindingtest\\plugins\\pathfindingplugin\\source\\pathfindingplugin\\public\\pathfindingplugin.h"
+        ],
+        "ImportedModules": [],
+        "ImportedHeaderUnits": []
+    }
+}

@@ -1,0 +1,20 @@
+{
+    "Version": "1.2",
+    "Data": {
+        "Source": "d:\\university\\portfolio\\pathfindingtest\\plugins\\pathfindingplugin\\intermediate\\build\\win64\\x64\\unrealeditor\\development\\pathfindingplugin\\module.pathfindingplugin.cpp",
+        "ProvidedModule": "",
+        "PCH": "d:\\university\\portfolio\\pathfindingtest\\intermediate\\build\\win64\\x64\\pathfindingtesteditor\\development\\unrealed\\sharedpch.unrealed.project.valapi.cpp20.h.pch",
+        "Includes": [
+            "d:\\university\\portfolio\\pathfindingtest\\plugins\\pathfindingplugin\\intermediate\\build\\win64\\x64\\unrealeditor\\development\\pathfindingplugin\\definitions.pathfindingplugin.h",
+            "d:\\university\\portfolio\\pathfindingtest\\plugins\\pathfindingplugin\\intermediate\\build\\win64\\unrealeditor\\inc\\pathfindingplugin\\uht\\pathfindingplugin.init.gen.cpp",
+            "d:\\university\\portfolio\\pathfindingtest\\plugins\\pathfindingplugin\\intermediate\\build\\win64\\unrealeditor\\inc\\pathfindingplugin\\uht\\pointscenecomponent.gen.cpp",
+            "d:\\university\\portfolio\\pathfindingtest\\plugins\\pathfindingplugin\\source\\pathfindingplugin\\public\\pointscenecomponent.h",
+            "d:\\university\\portfolio\\pathfindingtest\\plugins\\pathfindingplugin\\intermediate\\build\\win64\\unrealeditor\\inc\\pathfindingplugin\\uht\\pointscenecomponent.generated.h",
+            "d:\\university\\portfolio\\pathfindingtest\\plugins\\pathfindingplugin\\intermediate\\build\\win64\\unrealeditor\\inc\\pathfindingplugin\\uht\\splinemanager.gen.cpp",
+            "d:\\university\\portfolio\\pathfindingtest\\plugins\\pathfindingplugin\\source\\pathfindingplugin\\public\\splinemanager.h",
+            "d:\\university\\portfolio\\pathfindingtest\\plugins\\pathfindingplugin\\intermediate\\build\\win64\\unrealeditor\\inc\\pathfindingplugin\\uht\\splinemanager.generated.h"
+        ],
+        "ImportedModules": [],
+        "ImportedHeaderUnits": []
+    }
+}
