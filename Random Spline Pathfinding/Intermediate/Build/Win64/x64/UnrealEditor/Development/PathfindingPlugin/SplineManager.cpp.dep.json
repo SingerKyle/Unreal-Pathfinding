@@ -1,0 +1,22 @@
+{
+    "Version": "1.2",
+    "Data": {
+        "Source": "d:\\university\\portfolio\\pathfindingtest\\plugins\\random spline pathfinding\\source\\pathfindingplugin\\private\\splinemanager.cpp",
+        "ProvidedModule": "",
+        "PCH": "d:\\university\\portfolio\\pathfindingtest\\intermediate\\build\\win64\\x64\\pathfindingtesteditor\\development\\unrealed\\sharedpch.unrealed.project.valapi.cpp20.h.pch",
+        "Includes": [
+            "d:\\university\\portfolio\\pathfindingtest\\plugins\\random spline pathfinding\\intermediate\\build\\win64\\x64\\unrealeditor\\development\\pathfindingplugin\\definitions.pathfindingplugin.h",
+            "d:\\university\\portfolio\\pathfindingtest\\plugins\\random spline pathfinding\\source\\pathfindingplugin\\public\\pathfindingplugin.h",
+            "d:\\university\\portfolio\\pathfindingtest\\plugins\\random spline pathfinding\\source\\pathfindingplugin\\public\\splinemanager.h",
+            "k:\\epic\\ue_5.4\\engine\\source\\runtime\\engine\\classes\\components\\splinecomponent.h",
+            "k:\\epic\\ue_5.4\\engine\\intermediate\\build\\win64\\unrealeditor\\inc\\engine\\uht\\splinecomponent.generated.h",
+            "d:\\university\\portfolio\\pathfindingtest\\plugins\\random spline pathfinding\\intermediate\\build\\win64\\unrealeditor\\inc\\pathfindingplugin\\uht\\splinemanager.generated.h",
+            "d:\\university\\portfolio\\pathfindingtest\\plugins\\random spline pathfinding\\source\\pathfindingplugin\\public\\pointscenecomponent.h",
+            "d:\\university\\portfolio\\pathfindingtest\\plugins\\random spline pathfinding\\intermediate\\build\\win64\\unrealeditor\\inc\\pathfindingplugin\\uht\\pointscenecomponent.generated.h",
+            "k:\\epic\\ue_5.4\\engine\\source\\runtime\\engine\\classes\\engine\\staticmeshactor.h",
+            "k:\\epic\\ue_5.4\\engine\\intermediate\\build\\win64\\unrealeditor\\inc\\engine\\uht\\staticmeshactor.generated.h"
+        ],
+        "ImportedModules": [],
+        "ImportedHeaderUnits": []
+    }
+}
