@@ -1,9 +1,9 @@
 // Fill out your copyright notice in the Description page of Project Settings.
 
-#include "PathfindingPlugin.h"
 #include "FlyingMovementComponent.h"
-
+#include "PathfindingPlugin.h"
 #include "Components/SplineComponent.h"
+#include "FlyingPawn.h"
 
 UFlyingMovementComponent::UFlyingMovementComponent()
 {
@@ -49,6 +49,9 @@ void UFlyingMovementComponent::TickComponent(float DeltaTime, ELevelTick TickTyp
 		
 		FRotator SplineRotation = SplineTransform.GetRotation().Rotator();
 
+		const FVector OldLocation = GetOwner()->GetActorLocation();
+		// Might crash
+		Cast<AFlyingPawn>(GetOwner())->Velocity = (SplineTransform.GetLocation() - OldLocation) * 100.f;
 		GetOwner()->SetActorTransform(FTransform(SplineRotation, SplineTransform.GetLocation(), FVector(1,1,1)));
 	}
 }

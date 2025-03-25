@@ -1,12 +1,12 @@
 {
     "Version": "1.2",
     "Data": {
-        "Source": "d:\\university\\portfolio\\pathfindingtest\\plugins\\random spline pathfinding\\source\\pathfindingplugin\\private\\pathfindingplugin.cpp",
+        "Source": "d:\\localworkdir\\2100888\\myproject2\\plugins\\random spline pathfinding\\source\\pathfindingplugin\\private\\pathfindingplugin.cpp",
         "ProvidedModule": "",
-        "PCH": "d:\\university\\portfolio\\pathfindingtest\\intermediate\\build\\win64\\x64\\pathfindingtesteditor\\development\\unrealed\\sharedpch.unrealed.project.valapi.cpp20.h.pch",
+        "PCH": "d:\\localworkdir\\2100888\\myproject2\\intermediate\\build\\win64\\x64\\myproject2editor\\development\\unrealed\\sharedpch.unrealed.project.valapi.cpp20.h.pch",
         "Includes": [
-            "d:\\university\\portfolio\\pathfindingtest\\plugins\\random spline pathfinding\\intermediate\\build\\win64\\x64\\unrealeditor\\development\\pathfindingplugin\\definitions.pathfindingplugin.h",
-            "d:\\university\\portfolio\\pathfindingtest\\plugins\\random spline pathfinding\\source\\pathfindingplugin\\public\\pathfindingplugin.h"
+            "d:\\localworkdir\\2100888\\myproject2\\plugins\\random spline pathfinding\\intermediate\\build\\win64\\x64\\unrealeditor\\development\\pathfindingplugin\\definitions.pathfindingplugin.h",
+            "d:\\localworkdir\\2100888\\myproject2\\plugins\\random spline pathfinding\\source\\pathfindingplugin\\public\\pathfindingplugin.h"
         ],
         "ImportedModules": [],
         "ImportedHeaderUnits": []

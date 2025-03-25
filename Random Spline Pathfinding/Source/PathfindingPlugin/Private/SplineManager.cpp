@@ -1,6 +1,5 @@
-#include "PathfindingPlugin.h"
 #include "SplineManager.h"
-
+#include "PathfindingPlugin.h"
 #include "PointSceneComponent.h"
 #include "Engine/StaticMeshActor.h"
 

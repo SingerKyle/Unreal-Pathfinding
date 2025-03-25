@@ -1,18 +1,20 @@
 {
     "Version": "1.2",
     "Data": {
-        "Source": "d:\\university\\portfolio\\pathfindingtest\\plugins\\random spline pathfinding\\source\\pathfindingplugin\\private\\flyingmovementcomponent.cpp",
+        "Source": "d:\\localworkdir\\2100888\\myproject2\\plugins\\random spline pathfinding\\source\\pathfindingplugin\\private\\flyingmovementcomponent.cpp",
         "ProvidedModule": "",
-        "PCH": "d:\\university\\portfolio\\pathfindingtest\\intermediate\\build\\win64\\x64\\pathfindingtesteditor\\development\\unrealed\\sharedpch.unrealed.project.valapi.cpp20.h.pch",
+        "PCH": "d:\\localworkdir\\2100888\\myproject2\\intermediate\\build\\win64\\x64\\myproject2editor\\development\\unrealed\\sharedpch.unrealed.project.valapi.cpp20.h.pch",
         "Includes": [
-            "d:\\university\\portfolio\\pathfindingtest\\plugins\\random spline pathfinding\\intermediate\\build\\win64\\x64\\unrealeditor\\development\\pathfindingplugin\\definitions.pathfindingplugin.h",
-            "d:\\university\\portfolio\\pathfindingtest\\plugins\\random spline pathfinding\\source\\pathfindingplugin\\public\\pathfindingplugin.h",
-            "d:\\university\\portfolio\\pathfindingtest\\plugins\\random spline pathfinding\\source\\pathfindingplugin\\public\\flyingmovementcomponent.h",
-            "k:\\epic\\ue_5.4\\engine\\source\\runtime\\engine\\classes\\components\\splinecomponent.h",
-            "k:\\epic\\ue_5.4\\engine\\intermediate\\build\\win64\\unrealeditor\\inc\\engine\\uht\\splinecomponent.generated.h",
-            "d:\\university\\portfolio\\pathfindingtest\\plugins\\random spline pathfinding\\source\\pathfindingplugin\\public\\splinemanager.h",
-            "d:\\university\\portfolio\\pathfindingtest\\plugins\\random spline pathfinding\\intermediate\\build\\win64\\unrealeditor\\inc\\pathfindingplugin\\uht\\splinemanager.generated.h",
-            "d:\\university\\portfolio\\pathfindingtest\\plugins\\random spline pathfinding\\intermediate\\build\\win64\\unrealeditor\\inc\\pathfindingplugin\\uht\\flyingmovementcomponent.generated.h"
+            "d:\\localworkdir\\2100888\\myproject2\\plugins\\random spline pathfinding\\intermediate\\build\\win64\\x64\\unrealeditor\\development\\pathfindingplugin\\definitions.pathfindingplugin.h",
+            "d:\\localworkdir\\2100888\\myproject2\\plugins\\random spline pathfinding\\source\\pathfindingplugin\\public\\flyingmovementcomponent.h",
+            "c:\\program files\\epic games\\ue_5.4\\engine\\source\\runtime\\engine\\classes\\components\\splinecomponent.h",
+            "c:\\program files\\epic games\\ue_5.4\\engine\\intermediate\\build\\win64\\unrealeditor\\inc\\engine\\uht\\splinecomponent.generated.h",
+            "d:\\localworkdir\\2100888\\myproject2\\plugins\\random spline pathfinding\\source\\pathfindingplugin\\public\\splinemanager.h",
+            "d:\\localworkdir\\2100888\\myproject2\\plugins\\random spline pathfinding\\intermediate\\build\\win64\\unrealeditor\\inc\\pathfindingplugin\\uht\\splinemanager.generated.h",
+            "d:\\localworkdir\\2100888\\myproject2\\plugins\\random spline pathfinding\\intermediate\\build\\win64\\unrealeditor\\inc\\pathfindingplugin\\uht\\flyingmovementcomponent.generated.h",
+            "d:\\localworkdir\\2100888\\myproject2\\plugins\\random spline pathfinding\\source\\pathfindingplugin\\public\\pathfindingplugin.h",
+            "d:\\localworkdir\\2100888\\myproject2\\plugins\\random spline pathfinding\\source\\pathfindingplugin\\public\\flyingpawn.h",
+            "d:\\localworkdir\\2100888\\myproject2\\plugins\\random spline pathfinding\\intermediate\\build\\win64\\unrealeditor\\inc\\pathfindingplugin\\uht\\flyingpawn.generated.h"
         ],
         "ImportedModules": [],
         "ImportedHeaderUnits": []

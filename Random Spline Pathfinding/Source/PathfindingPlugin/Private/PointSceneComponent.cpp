@@ -1,8 +1,7 @@
 // Fill out your copyright notice in the Description page of Project Settings.
 
-#include "PathfindingPlugin.h"
 #include "PointSceneComponent.h"
-
+#include "PathfindingPlugin.h"
 #include "SplineManager.h"
 
 // Sets default values for this component's properties

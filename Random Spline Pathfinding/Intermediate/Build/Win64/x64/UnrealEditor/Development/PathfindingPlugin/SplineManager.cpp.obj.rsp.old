@@ -1,11 +1,11 @@
-"D:\University\Portfolio\PathfindingTest\Plugins\PathfindingPlugin\Source\PathfindingPlugin\Private\SplineManager.cpp"
+"D:\University\Portfolio\PathfindingTest\Plugins\Random Spline Pathfinding\Source\PathfindingPlugin\Private\SplineManager.cpp"
 /FI"D:\University\Portfolio\PathfindingTest\Intermediate\Build\Win64\x64\PathfindingTestEditor\Development\UnrealEd\SharedPCH.UnrealEd.Project.ValApi.Cpp20.h"
-/FI"D:\University\Portfolio\PathfindingTest\Plugins\PathfindingPlugin\Intermediate\Build\Win64\x64\UnrealEditor\Development\PathfindingPlugin\Definitions.PathfindingPlugin.h"
+/FI"D:\University\Portfolio\PathfindingTest\Plugins\Random Spline Pathfinding\Intermediate\Build\Win64\x64\UnrealEditor\Development\PathfindingPlugin\Definitions.PathfindingPlugin.h"
 /Yu"D:\University\Portfolio\PathfindingTest\Intermediate\Build\Win64\x64\PathfindingTestEditor\Development\UnrealEd\SharedPCH.UnrealEd.Project.ValApi.Cpp20.h"
 /Fp"D:\University\Portfolio\PathfindingTest\Intermediate\Build\Win64\x64\PathfindingTestEditor\Development\UnrealEd\SharedPCH.UnrealEd.Project.ValApi.Cpp20.h.pch"
-/Fo"D:\University\Portfolio\PathfindingTest\Plugins\PathfindingPlugin\Intermediate\Build\Win64\x64\UnrealEditor\Development\PathfindingPlugin\SplineManager.cpp.obj"
-/sourceDependencies "D:\University\Portfolio\PathfindingTest\Plugins\PathfindingPlugin\Intermediate\Build\Win64\x64\UnrealEditor\Development\PathfindingPlugin\SplineManager.cpp.dep.json"
-@"D:\University\Portfolio\PathfindingTest\Plugins\PathfindingPlugin\Intermediate\Build\Win64\x64\UnrealEditor\Development\PathfindingPlugin\PathfindingPlugin.Shared.rsp"
+/Fo"D:\University\Portfolio\PathfindingTest\Plugins\Random Spline Pathfinding\Intermediate\Build\Win64\x64\UnrealEditor\Development\PathfindingPlugin\SplineManager.cpp.obj"
+/sourceDependencies "D:\University\Portfolio\PathfindingTest\Plugins\Random Spline Pathfinding\Intermediate\Build\Win64\x64\UnrealEditor\Development\PathfindingPlugin\SplineManager.cpp.dep.json"
+@"D:\University\Portfolio\PathfindingTest\Plugins\Random Spline Pathfinding\Intermediate\Build\Win64\x64\UnrealEditor\Development\PathfindingPlugin\PathfindingPlugin.Shared.rsp"
 /Zc:inline
 /nologo
 /Oi
