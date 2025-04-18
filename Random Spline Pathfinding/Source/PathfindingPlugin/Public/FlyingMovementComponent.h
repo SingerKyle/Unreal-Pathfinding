@@ -24,6 +24,8 @@ class PATHFINDINGPLUGIN_API UFlyingMovementComponent : public UActorComponent
 public:
 
 	virtual void TickComponent(float DeltaTime, ELevelTick TickType, FActorComponentTickFunction* ThisTickFunction) override;
+
+	void RegenerateSplineAndContinue();
 	
 protected:
 
@@ -36,4 +38,15 @@ protected:
 	UPROPERTY(VisibleAnywhere, BlueprintReadOnly, meta = (AllowPrivateAccess = true), Category = "flight settings") USplineComponent* FlightSpline;
 
 	UPROPERTY() float SplineDistance = 0.0f;
+
+	// Blending
+	bool bIsBlending = false;
+	float BlendTimer = 0.f;
+	UPROPERTY(EditAnywhere, BlueprintReadWrite, meta = (AllowPrivateAccess = true), Category = "flight settings") float BlendDuration = 1.5f; // How long the blend takes, in seconds
+
+	FVector BlendStartLocation;
+	FVector BlendTargetLocation;
+
+	FRotator BlendStartRotation;
+	FRotator BlendTargetRotation;
 };

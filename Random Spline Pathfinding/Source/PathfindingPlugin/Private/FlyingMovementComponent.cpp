@@ -38,20 +38,85 @@ void UFlyingMovementComponent::TickComponent(float DeltaTime, ELevelTick TickTyp
 {
 	Super::TickComponent(DeltaTime, TickType, ThisTickFunction);
 
-	if (FlightSpline && ShouldMove)
+	if (bIsBlending)
 	{
+		BlendTimer += DeltaTime;
+
+		float BlendAlpha = FMath::Clamp(BlendTimer / BlendDuration, 0.f, 1.f);
+
+		FVector NewLocation = FMath::Lerp(BlendStartLocation, BlendTargetLocation, BlendAlpha);
+		FRotator NewRotation = FMath::Lerp(BlendStartRotation, BlendTargetRotation, BlendAlpha);
+
+		GetOwner()->SetActorLocationAndRotation(NewLocation, NewRotation);
+
+		if (BlendAlpha >= 1.f)
+		{
+			bIsBlending = false;
+		}
+		
+	}
+	
+	if (FlightSpline && ShouldMove && !bIsBlending)
+	{
+	
 		SplineDistance += (Speed * DeltaTime);
+
+		float SplineLength = FlightSpline->GetSplineLength();
+		
+		if(SplineDistance >= SplineLength - 50.f)
+		{
+			RegenerateSplineAndContinue();
+			return;
+		}
 
 		FTransform SplineTransform = FlightSpline->GetTransformAtDistanceAlongSpline(SplineDistance, ESplineCoordinateSpace::World);
 
 		FVector SplineTangent = FlightSpline->GetTangentAtDistanceAlongSpline(SplineDistance, ESplineCoordinateSpace::World);
-        
+		
 		
 		FRotator SplineRotation = SplineTransform.GetRotation().Rotator();
 
 		const FVector OldLocation = GetOwner()->GetActorLocation();
+		
 		// Might crash
-		Cast<AFlyingPawn>(GetOwner())->Velocity = (SplineTransform.GetLocation() - OldLocation) * 100.f;
+		if (AFlyingPawn* FlyingPawn = Cast<AFlyingPawn>(GetOwner()))
+		{
+			FlyingPawn->Velocity = (SplineTransform.GetLocation() - OldLocation) * 100.f;
+		}
 		GetOwner()->SetActorTransform(FTransform(SplineRotation, SplineTransform.GetLocation(), FVector(1,1,1)));
 	}
+}
+
+void UFlyingMovementComponent::RegenerateSplineAndContinue()
+{
+	if (!FlightSpline || !SplineManager) return;
+
+	BlendStartLocation = GetOwner()->GetActorLocation();
+	BlendStartRotation = GetOwner()->GetActorRotation();
+	
+	// 1. Save current position
+	FVector LastLocation = GetOwner()->GetActorLocation();
+
+	// 2. Ask manager to regenerate from here
+	if (ASplineManager* Manager = Cast<ASplineManager>(SplineManager))
+	{
+		Manager->AppendNewPoints(LastLocation);
+	}
+
+	// 3. Refresh our spline reference in case it changed
+	FindSplineInManager();
+
+	// 4. Reset our progress along the spline
+	SplineDistance = 0.f;
+
+	if (FlightSpline)
+	{
+		FTransform StartTransform = FlightSpline->GetTransformAtDistanceAlongSpline(SplineDistance, ESplineCoordinateSpace::World);
+		BlendTargetLocation = StartTransform.GetLocation();
+		BlendTargetRotation = StartTransform.GetRotation().Rotator();
+	}
+
+	// 6. Start blending
+	bIsBlending = true;
+	BlendTimer = 0.f;
 }

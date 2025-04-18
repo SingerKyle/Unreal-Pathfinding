@@ -18,6 +18,8 @@ public:
 
 	UFUNCTION(BlueprintCallable, CallInEditor, Category = "Spline Generator") void SetupSplineUsingPoints();
 
+	void AppendNewPoints(const FVector& StartLocation);
+	
 	void RemoveSplinePoint(USceneComponent* Point);
 	
 	void UpdateSplinePointForComponent(USceneComponent* MovedComponent);

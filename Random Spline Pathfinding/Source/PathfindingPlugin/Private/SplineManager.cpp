@@ -94,6 +94,33 @@ void ASplineManager::SetupSplineUsingPoints()
 	SplineComponent->SetDrawDebug(true);
 }
 
+void ASplineManager::AppendNewPoints(const FVector& StartLocation)
+{
+	SplineComponent->ClearSplinePoints();
+
+	// Start from current location
+	SplineComponent->AddSplinePoint(StartLocation, ESplineCoordinateSpace::World);
+
+	// Then add new random points
+	TArray<USceneComponent*> Temp = Points;
+
+	const int32 NumShuffles = Temp.Num() - 1;
+	for (int32 i = 0; i < NumShuffles; ++i)
+	{
+		int32 SwapIdx = FMath::RandRange(i, NumShuffles);
+		Temp.Swap(i, SwapIdx);
+	}
+
+	for (USceneComponent* Point : Temp)
+	{
+		SplineComponent->AddSplinePoint(Point->GetComponentLocation(), ESplineCoordinateSpace::World);
+	}
+
+	SplineComponent->UpdateSpline();
+	SplineComponent->bDrawDebug = true;
+	SplineComponent->SetDrawDebug(true);
+}
+
 void ASplineManager::RemoveSplinePoint(USceneComponent* Point)
 {
 	int32 PointIndex = Points.IndexOfByKey(Point);
